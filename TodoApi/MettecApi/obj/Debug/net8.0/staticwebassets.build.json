@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "SwjlvzyQC5SYxtcGy5YzG8N0hxfMvIU8N2fYeLDyxDg=",
+  "Source": "MettecApi",
+  "BasePath": "_content/MettecApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7d7d7d;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.form {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MettecApi", "MettecApi\MettecApi.csproj", "{C3661A62-723B-10D1-2602-1E899ED182F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3661A62-723B-10D1-2602-1E899ED182F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3661A62-723B-10D1-2602-1E899ED182F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3661A62-723B-10D1-2602-1E899ED182F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3661A62-723B-10D1-2602-1E899ED182F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A3BA95C-B0CE-4FA7-9A00-7400139AA402}
+	EndGlobalSection
+EndGlobal

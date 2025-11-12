@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>📝 Lista zadań</h2>
+
+  <div class="form">
+    <input [(ngModel)]="newTodo.title" placeholder="Tytuł" required />
+    <input [(ngModel)]="newTodo.description" placeholder="Opis" required />
+    <button (click)="addTodo()" [disabled]="!newTodo.title || !newTodo.description">Dodaj</button>
+  </div>
+
+  <div class="tasks-list">
+    <div *ngFor="let todo of todos" class="task-item" [class.done]="todo.isDone">
+      <div class="task-header">
+        <input type="checkbox" 
+              [(ngModel)]="todo.isDone" 
+              (change)="toggleStatus(todo)"
+              [id]="'task-' + todo.id" />
+        <label [for]="'task-' + todo.id" class="task-title">
+          #{{todo.id}} - {{todo.title}}
+        </label>
+      </div>
+      <div class="task-description">
+        {{todo.description}}
+      </div>
+      <button 
+        *ngIf="!todo.isDone" 
+        (click)="toggleStatus(todo)" 
+        class="done-btn">
+        ✅ Oznacz jako zrobione
+      </button>
+      
+      <button 
+        *ngIf="todo.isDone" 
+        (click)="toggleStatus(todo)" 
+        class="undone-btn">
+        ↩️ Cofnij
+      </button>
+    </div>
+  </div>
+</div>
