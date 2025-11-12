@@ -1,0 +1,54 @@
+# =====================================
+# ✅ .gitignore for ToDo-App (.NET + Angular)
+# =====================================
+
+# === .NET build artifacts ===
+bin/
+obj/
+out/
+
+# === Visual Studio / VS Code ===
+.vs/
+.vscode/
+
+# === Entity Framework Core auto-generated targets ===
+*.EntityFrameworkCore.targets
+
+# === User-specific files ===
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# === Logs / Cache ===
+*.log
+*.tlog
+*.cache
+*.bak
+
+# === Temporary / Database files ===
+*.tmp
+*.temp
+*.dbmdl
+*.pidb
+*.svclog
+*.ncb
+*.opendb
+*.VC.db
+
+# === Publish outputs ===
+/publish/
+/dist/
+/wwwroot/dist/
+/wwwroot/lib/
+
+# === Angular / Node (Frontend) ===
+/TodoFront/node_modules/
+/TodoFront/dist/
+/TodoFront/.angular/
+/TodoFront/.cache/
+/TodoFront/.env.local
+
+# === OS / system files ===
+.DS_Store
+Thumbs.db
