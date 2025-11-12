@@ -52,7 +52,7 @@ cd TodoFront
 npm install
 ng serve
 ```
-
+Aplikacja dostępna pod: http://localhost:4200/
 
 ## 🧪 TESTY (xUnit)
 ```markdown
