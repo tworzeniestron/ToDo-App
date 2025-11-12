@@ -17,7 +17,7 @@ Pokazuje integrację backendu z frontendem przy użyciu Entity Framework Core i 
 ---
 
 ## ⚙️ KONFIGURACJA BAZY DANYCH
-
+```markdown
 **1️⃣ Utwórz bazę danych w PostgreSQL:**
 CREATE DATABASE mettec_db;
 
