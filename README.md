@@ -14,8 +14,6 @@ Pokazuje integrację backendu z frontendem przy użyciu Entity Framework Core i 
 | Angular CLI    | 17+              | `ng version`           |
 | PostgreSQL     | 14+              | `psql --version`       |
 
----
-
 ## ⚙️ KONFIGURACJA BAZY DANYCH
 ```markdown
 **1️⃣ Utwórz bazę danych w PostgreSQL:**
@@ -34,27 +32,30 @@ dotnet ef database update
 4️⃣ Dodaj przykładowe dane testowe:
 INSERT INTO "MettecItems" ("Title", "Description", "IsDone")
 VALUES ('Pierwsze zadanie', 'Testowy opis zadania', false);
+```
 
----
 
 ## 🚀 BACKEND (.NET API)
+```markdown
 cd TodoApi/MettecApi
 dotnet restore
 dotnet run --launch-profile "https"
 
 Swagger → http://localhost:5001/swagger/index.html
 API → http://localhost:5001/api/mettec
+```
 
----
 
 ## 🌐 FRONTEND (Angular)
+```markdown
 cd TodoFront
 npm install
 ng serve
+```
 
----
 
 ## 🧪 TESTY (xUnit)
+```markdown
 cd TodoApi/MettecApi
 dotnet test
 
@@ -62,17 +63,22 @@ Testy sprawdzają:
 pobieranie zadań (GET /api/mettec)
 dodawanie (POST)
 aktualizację statusu (PUT)
+```
 
----
 
 📦 Struktura projektu:
+```markdown
 ToDo-App/
 ├─ TodoApi/      # Backend (.NET 8)
 └─ TodoFront/    # Frontend (Angular 17)
+```
 
+```markdown
 👨 Autor:
 Piotr Markiewicz – Fullstack Developer (.NET + Angular)
-
+```
+```markdown
 🛈 Uwaga dotycząca nazw w projekcie:
 W projekcie pojawiają się przykładowe nazwy użyte wyłącznie jako identyfikatory techniczne w celach demonstracyjnych.
 Nie mają one związku z żadnym rzeczywistym podmiotem ani produktem.
+```
