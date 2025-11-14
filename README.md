@@ -21,10 +21,11 @@ Pokazuje integrację backendu z frontendem przy użyciu Entity Framework Core i 
 CREATE DATABASE mettec_db;
 ```
 2️⃣ Skonfiguruj połączenie w pliku appsettings.Development.json:
+```markdown
 "ConnectionStrings": {
   "DefaultConnection": "Host=localhost;Port=5432;Database=mettec_db;Username=postgres;Password=hasło_do_bazy_danych"
 }
-
+```
 3️⃣ Utwórz i zaktualizuj migracje:
 ```cmd
 cd TodoApi/MettecApi
