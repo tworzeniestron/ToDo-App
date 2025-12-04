@@ -153,7 +153,7 @@
     }
   }
 
-  .done-btn, .undone-btn {
+  .done-btn, .undone-btn, .delete-btn {
     border: none;
     border-radius: 6px;
     margin-top: 10px;
@@ -177,6 +177,15 @@
     color: rgba(0, 0, 0, 0.8);
     &:hover { 
       background-color: rgba(224, 168, 0, 1);
+      transform: translateY(-1px);
+    }
+  }
+
+  .delete-btn {
+    background-color: rgba(220, 53, 69, 0.9);
+    margin-left: 20px;
+    &:hover { 
+      background-color: rgba(200, 35, 51, 1);
       transform: translateY(-1px);
     }
   }

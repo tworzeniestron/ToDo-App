@@ -72,5 +72,19 @@ namespace MettecApi.Tests
             var updated = await context.Todos.FindAsync(item.Id);
             Assert.True(updated.IsDone);
         }
+
+        [Fact] // Test usuwania zadania
+        public async Task DeleteTodo_ShouldRemoveItemFromDatabase()
+        {
+            var context = GetDbContext();
+            var item = new MettecItem { Title = "Do usunięcia", Description = "Opis", IsDone = false };
+            context.Todos.Add(item);
+            await context.SaveChangesAsync();
+            var controller = new MettecController(context);
+            var result = await controller.DeleteTodo(item.Id);
+            Assert.IsType<NoContentResult>(result);
+            var deletedItem = await context.Todos.FindAsync(item.Id);
+            Assert.Null(deletedItem);
+        }
     }
 }

@@ -28,4 +28,8 @@ export class MettecService {
     updateStatus(todo: MettecItem): Observable<void> { 
         return this.http.put<void>(`${this.apiUrl}/${todo.id}`, todo); 
     }
+
+    deleteTodo(id: number): Observable<void> { 
+        return this.http.delete<void>(`${this.apiUrl}/${id}`); 
+    }
 }

@@ -37,6 +37,10 @@ export class TodoListComponent implements OnInit {
     });
   }
   
+  deleteTodo(id?: number) {
+    if (id === undefined) return;
+    this.todoService.deleteTodo(id).subscribe(() => this.loadTodos());
+  }
 
   toggleStatus(todo: MettecItem) {
     todo.isDone = !todo.isDone;
