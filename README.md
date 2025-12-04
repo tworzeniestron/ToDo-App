@@ -15,20 +15,24 @@ Pokazuje integrację backendu z frontendem przy użyciu Entity Framework Core i 
 | PostgreSQL     | 14+              | `psql --version`       |
 
 ## ⚙️ KONFIGURACJA BAZY DANYCH
-```markdown
-**1️⃣ Utwórz bazę danych w PostgreSQL:**
-CREATE DATABASE mettec_db;
 
+**1️⃣ Utwórz bazę danych w PostgreSQL:**
+```cmd
+CREATE DATABASE mettec_db;
+```
 2️⃣ Skonfiguruj połączenie w pliku appsettings.Development.json:
+```markdown
 "ConnectionStrings": {
   "DefaultConnection": "Host=localhost;Port=5432;Database=mettec_db;Username=postgres;Password=hasło_do_bazy_danych"
 }
-
+```
 3️⃣ Utwórz i zaktualizuj migracje:
+```cmd
 cd TodoApi/MettecApi
 dotnet ef migrations add Init
 dotnet ef database update
-
+```
+```markdown
 4️⃣ Dodaj przykładowe dane testowe:
 INSERT INTO "MettecItems" ("Title", "Description", "IsDone")
 VALUES ('Pierwsze zadanie', 'Testowy opis zadania', false);
@@ -36,29 +40,30 @@ VALUES ('Pierwsze zadanie', 'Testowy opis zadania', false);
 
 
 ## 🚀 BACKEND (.NET API)
-```markdown
+```cmd
 cd TodoApi/MettecApi
 dotnet restore
 dotnet run --launch-profile "https"
-
+```
+```markdown
 Swagger → http://localhost:5001/swagger/index.html
 API → http://localhost:5001/api/mettec
 ```
 
-
 ## 🌐 FRONTEND (Angular)
-```markdown
+```cmd
 cd TodoFront
 npm install
 ng serve
 ```
-
+Aplikacja dostępna pod: http://localhost:4200/
 
 ## 🧪 TESTY (xUnit)
-```markdown
+```cmd
 cd TodoApi/MettecApi
 dotnet test
-
+```
+```markdown
 Testy sprawdzają:
 pobieranie zadań (GET /api/mettec)
 dodawanie (POST)
